@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	var sum=3;
-	$("#sumAll").text(sum);
+	$("#sumAll").val(sum);
 
 	$("input").change(function () {
 		sum=0;
@@ -22,11 +22,11 @@ $(document).ready(function(){
 			sum++;
 		if ( $("#usedThief").is(':checked') )
 			sum++;
-		$("#sumAll").text(sum);
+		$("#sumAll").val(sum);
 	});
 
-	$("#createGame").click(function () {
-		/*if ( $("#usedProphet").is(':checked') )
+	/*$("#createGame").click(function () {
+		if ( $("#usedProphet").is(':checked') )
 			$("#usedProphetVal").val("1");
 		else
 			$("#usedProphetVal").val("0");
@@ -57,9 +57,9 @@ $(document).ready(function(){
 		if ( $("#usedThief").is(':checked') )
 			$("#usedThiefVal").val("1");
 		else
-			$("#usedThiefVal").val("0");*/
+			$("#usedThiefVal").val("0");
 		$("#sumAllVal").val($("#sumAll").val());
 		$("#gameForm").submit();
-	});
+	});*/
 });
 

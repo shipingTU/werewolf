@@ -1,0 +1,1 @@
+update roles set used=0,pos=NULL,entred=0;
