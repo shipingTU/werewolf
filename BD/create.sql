@@ -14,6 +14,7 @@ INSERT INTO roles(name) VALUES ('townsfolk3');
 INSERT INTO roles(name) VALUES ('townsfolk4');
 INSERT INTO roles(name) VALUES ('prophet');
 INSERT INTO roles(name) VALUES ('witch');
+INSERT INTO roles(name) VALUES ('savior');
 INSERT INTO roles(name) VALUES ('hunter');
 INSERT INTO roles(name) VALUES ('idiot');
 INSERT INTO roles(name) VALUES ('cupido');

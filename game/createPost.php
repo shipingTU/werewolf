@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<title>CreatePost</title>	
+    </head>
+<body>
 <?php
 	include '../func/connectSql.php';
 	$bd=connectSql();
@@ -76,7 +84,11 @@
 	$row = mysqli_fetch_array($vQuery, MYSQLI_ASSOC);    
 	
 	if ( $row['totol'] == $sumAll )
-		echo OK;
+		echo "<p>OK</p>";
 	else
-		echo KO;
+		echo "<p>KO</p>";
+
+	echo '<a href="../index.html">Return</a>';
+	mysqli_close($bd);
 ?>
+</body>
