@@ -12,8 +12,8 @@ $(document).ready(function(){
 		var posCheck=$("#positions").val();
 		$.ajax({
 			type: 'POST',
-			url: "checkPosEntred.php",
-			data: {}
+			url: "./game/checkPosEntred.php",
+			data: {pos:$("#positions").val()}
 		})
 		.fail(function() {
 			alert( "error" );
@@ -21,7 +21,7 @@ $(document).ready(function(){
 		.done(function(data){
 			idQ = $.parseJSON(data);	
 		});
-		$("#enterGameForm").submit();
+		//$("#enterGameForm").submit();
 	});
 	
 });

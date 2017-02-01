@@ -85,10 +85,11 @@
 	
 	if ( $row['totol'] == $sumAll )
 		echo "<p>OK</p>";
+		$GLOBALS['total']=$sumAll;
 	else
 		echo "<p>KO</p>";
 
-	echo '<a href="../index.html">Return</a>';
+	echo '<a href="../index.php">Return</a>';
 	mysqli_close($bd);
 ?>
 </body>
