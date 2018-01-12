@@ -3,18 +3,18 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Create</title>
+    <title>Create game</title>
 
     <!--link rel="icon" href="./source/favicon.ico"-->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <script src="../js/jquery-1.11.1.min.js" type="text/javascript"></script>
-    <script src="../js/createGame.js" type="text/javascript"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script src="js/createGame.js" type="text/javascript"></script>
   </head>
 
   <body>
 	<div class="container" id="main">
 		<div class="well bs-component">
-			<form id="gameForm" action="createPost.php" method="post">
+			<form id="gameForm" action="func/createPost.php" method="post">
 				<fieldset>
 					<legend>Roles</legend>
 					<!--Werewolf-->

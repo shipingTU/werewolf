@@ -1,6 +1,6 @@
 <?php
-	include '../func/connectSql.php';
-	/*$i=0;
+	include 'func/base.php';
+	$i=0;
 	$bd=connectSql();
 	$sql="select pos from roles where used=1 and entred!=1 order by pos asc";
 	$vQuery=mysqli_query($bd, $sql);
@@ -11,8 +11,5 @@
         }      
     }
     mysqli_close($bd);
-    echo json_encode($pos);*/
-    $pos=$_POST['pos'];
-    $bd=connectSql();
-    
+    echo json_encode($pos);
 ?>

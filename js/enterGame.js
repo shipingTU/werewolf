@@ -12,7 +12,7 @@ $(document).ready(function(){
 		var posCheck=$("#positions").val();
 		$.ajax({
 			type: 'POST',
-			url: "./game/checkPosEntred.php",
+			url: "func/checkPosEntred.php",
 			data: {pos:$("#positions").val()}
 		})
 		.fail(function() {

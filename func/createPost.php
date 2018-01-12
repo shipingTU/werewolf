@@ -7,7 +7,7 @@
     </head>
 <body>
 <?php
-	include '../func/connectSql.php';
+	include 'func/base.php';
 	$bd=connectSql();
 	/*random an array of the numbers*/
 	$sumAll=$_POST["sumAll"];

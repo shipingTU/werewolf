@@ -3,28 +3,28 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Signin</title>
+    <title>Werewolf Game</title>
 
     <!--link rel="icon" href="./source/favicon.ico"-->
-    <link href="./css/bootstrap.min.css" rel="stylesheet">
-    <link href="./css/signin.css" rel="stylesheet">
-    <script src="./js/jquery-1.11.1.min.js" type="text/javascript"></script>
-    <script src="./js/enterGame.js" type="text/javascript"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/signin.css" rel="stylesheet">
+    <script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script src="js/enterGame.js" type="text/javascript"></script>
   </head>
 
   <body>
     <div class="container">
       <h2 class="form-signin-heading">The Werewolves of Millers Hollow</h2>	
       <div class="form-group">
-        <a href="./game/createGame.php" class="btn btn-primary btn-lg btn-block">Create a game</a>
+        <a href="createGame.php" class="btn btn-primary btn-lg btn-block">Create a game</a>
       </div>
-        <form id="enterGameForm" action="./game/game.php" method="post">
+        <form id="enterGameForm" action="game.php" method="post">
           <div class="form-group">
             <select id="positions" name="positions" class="form-control form-control-xs">
               <?php
-                include './func/connectSql.php';
+                include 'func/base.php';
                 $bd=connectSql();
-                $sql='select pos from roles where used=1 and entred!=1 order by pos asc';
+                $sql="SELECT pos from roles where used=1 and entred!=1 order by pos asc";
                 $vQuery=mysqli_query($bd, $sql);
                 if ( $vQuery ) {
                   echo '<option selected></option>'; 
