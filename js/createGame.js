@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	var sum=3;
-	$("#sumAll").val(sum);
+	$("#sumAll").text(sum);
 
 	$("input").change(function () {
 		sum=0;
@@ -22,7 +22,7 @@ $(document).ready(function(){
 			sum++;
 		if ( $("#usedThief").is(':checked') )
 			sum++;
-		$("#sumAll").val(sum);
+		$("#sumAll").text(sum);
 	});
 
 	/*$("#createGame").click(function () {
